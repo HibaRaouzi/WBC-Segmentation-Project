@@ -20,10 +20,10 @@ LOAD_MODEL = False
 LOSS_FN = "DICE_BCE_LOSS"
 
 
-TRAIN_IMG_DIR = "/content/drive/MyDrive/UNET/images/"
-TRAIN_MASK_DIR = "/content/drive/MyDrive/UNET/masks/"
-VAL_IMG_DIR = "/content/drive/MyDrive/UNET/val_set/images/"
-VAL_MASK_DIR = "/content/drive/MyDrive/UNET/val_set/masks/"
+TRAIN_IMG_DIR = "/content/drive/MyDrive/images/train"
+TRAIN_MASK_DIR = "/content/drive/MyDrive/masks/train"
+VAL_IMG_DIR = "/content/drive/MyDrive/images/test"
+VAL_MASK_DIR = "/content/drive/MyDrive/masks/test"
 
 
 
