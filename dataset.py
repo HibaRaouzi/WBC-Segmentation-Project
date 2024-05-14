@@ -5,10 +5,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class MyDataset(Dataset):
-    def __init__(self, folder, transform=None):
+    def __init__(self, images_dir, masks_dir, transform=None):
+        self.images_dir = images_dir
+        self.masks_dir = masks_dir
         self.transform = transform
-        self.images = sorted(os.listdir(f"{folder}/images"))
-        self.masks = sorted(os.listdir(f"{folder}/masks"))
+        self.images = sorted(os.listdir(images_dir))
+        self.masks = sorted(os.listdir(masks_dir))
 
 
     def __len__(self):

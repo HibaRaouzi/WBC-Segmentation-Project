@@ -2,7 +2,7 @@
 from tqdm import tqdm
 
 import torch.optim as optim
-from model import UNET
+from unet.model import UNET
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
@@ -129,6 +129,8 @@ def main():
 
     print(" the best score : ", best_score.item())
 
+if __name__ == "___main__":
+		main()
 
 
 
